@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-md-12">
+    <form [formGroup]="appsForm" (ngSubmit)="onSubmit()">
+
+      <div class="row">
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary" [disabled]="!appsForm.valid">Save</button>
+          <button type="button" class="btn btn-danger" (click)="deleteApp()">Back</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" placeholder="App name..." id="name"formControlName= "name" class="form-control" >
+          </div>
+        </div>
+      </div>
+      <div *ngIf="appsForm.controls['name'].invalid && (appsForm.controls['name'].dirty || appsForm.controls['name'].touched)" class="alert alert-danger">
+        <div *ngIf="appsForm.controls['name'].errors.required">
+          Name is required.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" placeholder="App Log..." id="path" formControlName= "imageURLPath" class="form-control" #imageURLPath>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img [src]="imageURLPath.value" class="img-responsive">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="url" placeholder="App Url..." id="url" formControlName= "URL" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="appsForm.controls['URL'].invalid && (appsForm.controls['URL'].dirty || appsForm.controls['URL'].touched)" class="alert alert-danger">
+        <div *ngIf="appsForm.controls['URL'].errors.required">
+          URL is required.
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+

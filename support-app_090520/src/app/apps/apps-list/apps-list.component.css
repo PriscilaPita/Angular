@@ -1,0 +1,13 @@
+hr {
+  border-top: 2px solid #337AB7;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-right: 5px;
+}
+
+.btn-primary {
+  background-color: #337AB7;
+  border: 1px solid #337AB7;
+}

@@ -1,0 +1,41 @@
+h2 {
+  color: #343a40;
+  margin: 0;
+}
+
+hr {
+  border-color: #337AB7 !important;
+}
+
+.img-responsive {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  max-width: 150px;
+}
+
+.name {
+  margin-left: 15px;
+}
+
+.title-h5 {
+  font-size: 18px;
+  color: #343a40;
+}
+
+.btn {
+  color: #337AB7;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-top: 10px
+}
+
+.btn:active
+.btn::selection{
+  outline: none !important;
+  border: none !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}

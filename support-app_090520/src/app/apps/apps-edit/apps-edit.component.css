@@ -1,0 +1,42 @@
+.img-responsive {
+  max-width: 200px;
+}
+
+.btn {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.btn-primary {
+  background-color: #337AB7;
+
+}
+
+.form-control{
+  background-color: #ffffff00;
+  border: none;
+  border-bottom: 1px solid #2C699E;
+  border-radius: 0;
+  color: #343a40;
+  padding: 0;
+}
+
+.form-control
+.ng-pristine,
+.ng-touched,
+.ng-dirty,
+.ng-valid {
+  box-shadow: none;
+}
+
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-bottom: 1px solid red;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+

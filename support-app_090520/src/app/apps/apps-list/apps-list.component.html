@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-primary" (click)="newApp()">+ Add new App</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <app-apps-items *ngFor="let app of apps; let idx = index" [apps]="app" [index]="idx"></app-apps-items>
+  </div>
+</div>
